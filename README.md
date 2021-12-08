@@ -1,4 +1,4 @@
-# Minimal Theme
+# This repo is a Fork of Minimal Theme
 
 [Demo the Theme](http://orderedlist.github.com/minimal/)
 
