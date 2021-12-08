@@ -104,7 +104,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:300px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -169,8 +169,9 @@ header ul a strong {
   color:#222;
 }
 
+/* modify this for body width */
 section {
-  width:500px;
+  width:850px;
   float:right;
   padding-bottom:50px;
 }
@@ -267,4 +268,12 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+/* Extra .css style added */
+.portrait {
+  width:160px;
+  margin-bottom: 8px;
+  /*border-radius: 10px;*/
+  border-radius: 50%;
 }
