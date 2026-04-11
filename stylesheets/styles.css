@@ -347,19 +347,15 @@ p {
 
 .award-list li {
   font-size: 14px;
-  line-height: 1.65;
-  margin-bottom: 10px;
-  padding-left: 16px;
-  position: relative;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  padding-left: 14px;
+  border-left: 2px solid #e7e5e4;
+  transition: border-color 0.2s ease;
 }
 
-.award-list li::before {
-  content: "–";
-  position: absolute;
-  left: 0;
-  color: #c4bfbb;
-  font-size: 13px;
-  top: 1px;
+.award-list li:hover {
+  border-left-color: #78716c;
 }
 
 /* ============================================================
