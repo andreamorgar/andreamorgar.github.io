@@ -1,197 +1,169 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Andrea Morales' webpage</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrea Morales</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <!-- Add icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
-  <header>
-        <h1 align="center">Andrea Morales Garzón</h1>
+  <body>
 
-        <!-- Picture + Links + News -->
-        <div style="margin-bottom: 10px" align="center">
+    <nav class="topnav">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#grants">Grants & Awards</a>
+    </nav>
 
+    <div class="wrapper">
 
-            <img src="./images/andrea.png" alt="Portrait" class="portrait">
-            <!-- Portrait -->
-            <img src="images/mail.png" alt="Portrait" WIDTH=280 style="margin-bottom: 8px;border-radius: 10px;">
-            <p>
-
-            <!-- Email -->
-            <!-- <div style="margin-bottom: 6px;"><img src="./files/email.png" width="175"></div> -->
-            <!-- <p> <a>xxxxxx@ugr.es</a> | <a>xxxxxx@go.ugr.es</a></p> -->
-
-            <!-- CV -->
-            <a href="./docs/Andrea_CV.pdf" style="margin-right:14px;"><i class="ai ai-cv" style="font-size: 32px;"></i>
-            </a>
-
-            <!-- Git -->
-            <a href="https://github.com/andreamorgar" style="margin-right:14px;">
-                <i class="fa fa-github" style="font-size:32px;"></i>
-                <!-- color: #A7A499" -->
-            </a>
-
-            <a href="https://www.linkedin.com/in/andrea-morales-garzón-784721104" style="margin-right:14px;">
-                <i class="fa fa-linkedin" style="font-size:32px;"></i>
-                <!-- color: #A7A499" -->
-            </a>
-
-
-            <!-- Scholar -->
-            <a href="https://scholar.google.com/citations?user=VY5jg9YAAAAJ&hl=es" style="margin-right:14px;">
-                <i class="ai ai-google-scholar big-icon" style="font-size:32px;"></i>
-            </a>
-
-            <!-- ORCID
-            <a href="https://orcid.org/0000-0002-3458-0694" style="margin-right:14px;">
-                <i class="ai ai-orcid big-icon" style="font-size:32px;"></i>
-            </a>
-
-
-            <!-- Twitter -->
-            <a href="https://twitter.com/andreamorgar">
-                <i class="fa fa-twitter" style="font-size:32px;"></i>
-            </a>
-
-            <br>
-            <br>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="profile">
+          <img src="./images/andrea.jpg" alt="Andrea Morales Garzón" class="portrait">
+          <h1>Andrea Morales Garzón</h1>
+          <p class="position">Postdoctoral Researcher</p>
+          <p class="institution">University of Granada</p>
+          <div class="profile-divider"></div>
+          <p class="email-line" id="email-display"></p>
+          <script>
+            (function() {
+              var e1 = atob('YW1vcmFsZXNnQHVnci5lcw==');
+              var el = document.getElementById('email-display');
+              el.innerHTML = '<a href="mailto:' + e1 + '"><i class="fa fa-envelope"></i> ' + e1 + '</a>';
+            })();
+          </script>
+          <div class="social-links">
+            <a href="./docs/Andrea_CV.pdf" title="CV"><i class="ai ai-cv"></i></a>
+            <a href="https://github.com/andreamorgar" title="GitHub"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/andrea-morales-garzón-784721104" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=VY5jg9YAAAAJ&hl=es" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://twitter.com/andreamorgar" title="Twitter"><i class="fa fa-twitter"></i></a>
+          </div>
         </div>
+      </aside>
 
-  </header>
+      <!-- Main content -->
+      <main class="content">
 
-  <section>
+        <section id="about">
+          <h2>About me</h2>
+          <p>
+            Hi! 🌸 I’m Andrea, a postdoctoral researcher in Computer Science at the University of Granada and part of the <a href="https://sites.google.com/go.ugr.es/ugritailab/?pli=1">UGRitai lab</a>. I work at the intersection of Artificial Intelligence and Natural Language Processing, focusing on food, culture, and language.
+            My research explores how AI can support healthier and more culturally-aware food systems — from building intelligent nutrition tools to adapting recipes across cultures. My work also addresses bias in language models, including sexism. 
+            During my PhD, I was a visiting Ph.D. student at the NLP section of the University of Copenhagen, supervised by Dr. <a href="https://danielhers.github.io">Daniel Hershcovich</a>. 
+          </p>
+          <p>
+            Previously, I worked as a researcher in the <a href="https://www.stance4health.com">H2020 Project Stance4Health</a>, contributing to the design of an intelligent nutrition service. I also hold Master's degrees in Computer Engineering and Data Science from UGR, where I specialized in computing and intelligent systems, and a Bachelor's degree in Computer Science. 
+          </p>
+          <p>
+            <strong>Scientific communication</strong> — I actively participate in scientific dissemination and outreach activities, including international conferences, AI workshops, and events for the general public such as the European Researchers' Night 2025. I am a co-organiser of <a href="https://pydata.org/">PyData Granada</a>, and have given talks at the national Python conference (<a href="https://es.pycon.org/">PyConES</a>), working to bring NLP closer to the open-source community.
+          </p>
+          <p class="callout">Feel free to reach out to discuss research, collaborations, or ideas! 😊</p>
+        </section>
 
-    <!-- <h1> <a>Website in progress ..... </a> &#9935;</h1> -->
+        <section id="news">
+          <h2>Recent news</h2>
+          <ul class="news-list">
+            <li>
+              <span class="news-date">Apr 2026</span>
+              <span>Paper accepted at ACL 2026 main conference: <a href="https://arxiv.org/abs/2507.21934">Culinary Crossroads: A RAG Framework for Enhancing Diversity in Cross-Cultural Recipe Adaptation</a>.</span>
+            </li>
+            <li>
+              <span class="news-date">Jul 2025</span>
+              <span>Successfully defended my PhD thesis with <em>cum laude</em>!</span>
+            </li>
+            <li>
+              <span class="news-date">Apr 2025</span>
+              <span>Visiting PhD Student (3 months) at the NLP section of <a href="https://di.ku.dk/english/research/nlp/">University of Copenhagen (KU)</a>. Check out our <a href="https://arxiv.org/abs/2507.21934">preprint</a>!</span>
+            </li>
+            <li>
+              <span class="news-date">Jun 2024</span>
+              <span>Visiting PhD Student (3 months) at the NLP section of <a href="https://di.ku.dk/english/research/nlp/">University of Copenhagen (KU)</a>.</span>
+            </li>
+            <li>
+              <span class="news-date">Jun 2024</span>
+              <span>Awarded in the <a href="https://ugremprendedora.ugr.es/convocados-8-premios-de-800-euros-a-ideas-de-negocio-dentro-del-programa-univergem-2023/">UNIVERGEM Entrepreneurship for Business Ideas</a> for the technological contributions I'm developing in my PhD thesis.</span>
+            </li>
+            <li>
+              <span class="news-date">Jun 2024</span>
+              <span>1st Runner-up at the <a href="https://www.scie.es/convocado-la-4a-edicion-de-los-premios-scie-zonta-sngular-2024/">SCIE-ZONTA-SNGULAR 2024 award</a>, recognising contributions of women pursuing PhD studies in computer science.</span>
+            </li>
+          </ul>
+          <p class="older-news-link"><a href="old-news.html">Older news →</a></p>
+        </section>
 
+        <section id="publications">
+          <h2>Selected publications</h2>
 
-<h2>About me</h2>
+          <h3>Journal papers</h3>
+          <ul class="pub-list">
+            <li>Alzate, M., Vidaurreta-Apesteguia, P., Morales-Garzón, A., &amp; Gutiérrez-Batista, K. (2026). <a href="https://www.sciencedirect.com/science/article/pii/S0040162525004585">Forecasting user perceptions of mHealth apps: AI-driven insights from large-scale user-generated content</a>. <em>Technological Forecasting and Social Change</em>, 223, 124427.</li>
+            <li>Morales-Garzón, A., Quiñones-Muñoz, A., Gutiérrez-Batista, K., &amp; Martin-Bautista, M. J. (2026). <a href="https://doi.org/10.1007/s00530-025-02151-3">A multimodal deep learning framework for nutritional estimation and health-oriented recipe analysis</a>. <em>Multimedia Systems</em>, 32(2), 153.</li>
+            <li>Morales Garzón, A., Rojas Carvajal, A. M., Morcillo Jiménez, R., Martín Bautista, M. J., Gutiérrez Batista, K. (2025). <a href="https://doi.org/10.1016/j.asoc.2025.113234">Personalised healthy food text recommendations through fuzzy linguistic variables: A generative AI-based approach</a>.</li>
+            <li>Morales-Garzón, A., Peinado, P. S., Morcillo-Jimenez, R., Gutiérrez-Batista, K., &amp; Martin-Bautista, M. J. (2025). <a href="https://doi.org/10.1016/j.eswa.2025.127603">Service-oriented multi-platform for food computing: A mobile application for recipe adaptation to nutrition behaviours (AI2Cuisine)</a>. <em>Expert Systems with Applications</em>, 281, 127603.</li>
+            <!-- <li>Diaz-Garcia, J. A., Morales-Garzón, A., Gutiérrez-Batista, K., &amp; Martin-Bautista, M. J. (2025). <a href="https://doi.org/10.3390/electronics14173426">Optimising Text Classification in Social Networks via Deep Learning-Based Dimensionality Reduction</a>. <em>Electronics</em>, 14(17), 3426.</li> -->
+            <li>Morales-Garzón, A., Gutiérrez-Batista, K., &amp; Martin-Bautista, M. J. (2025). <a href="https://doi.org/10.1007/s00530-025-01667-y">Adaptafood: an intelligent system to adapt recipes to specialised diets and healthy lifestyles</a>. <em>Multimedia Systems</em>, 31(2), 87.</li>
+            <li>Morales-Garzón, A., Gutiérrez-Batista, K., &amp; Martin-Bautista, M. J. (2023). <a href="https://doi.org/10.1007/s00607-023-01233-2">Link prediction in food heterogeneous graphs for personalised recipe recommendation based on user interactions and dietary restrictions</a>. <em>Computing</em>, 1–23.</li>
+            <!-- <li>Ortiz-Viso, B., Morales-Garzón, A., Martin-Bautista, M. J., &amp; Vila, M. A. (2023). <a href="https://doi.org/10.1109/ACCESS.2023.3290918">Evolutionary approach for building, exploring and recommending complex items with application in nutritional interventions</a>. <em>IEEE Access</em>, 11, 65891–65905.</li> -->
+            <!-- <li>Morales-Garzón, A., Gómez-Romero, J., &amp; Martin-Bautista, M. J. (2021). <a href="https://doi.org/10.1109/ACCESS.2021.3058559">A Word Embedding-Based Method for Unsupervised Adaptation of Cooking Recipes</a>. <em>IEEE Access</em>, 9, 27389–27404.</li> -->
+          </ul>
 
-<p>
-I hold a PhD in Computer Science from the <a href="https://www.ugr.es/">University of Granada (UGR)</a>, where I am part of the IdBIS research group and currently work as a postdoctoral fellow.  
-My research lies at the intersection of Artificial Intelligence (AI) and Natural Language Processing (NLP), with a focus on:  
-(1) developing intelligent systems for health and nutrition applications,  
-(2) addressing the challenges of heterogeneous and multimodal data, and  
-(3) detecting and mitigating biases and sexism in language models.  
-</p>
+          <h3>Conference papers</h3>
+          <ul class="pub-list">
+            <li>Morales-Garzón, A., Morcillo-Jiménez, R., Gutiérrez-Batista, K., &amp; Martin-Bautista, M. J. (2024). <a href="https://doi.org/10.1007/978-3-031-73997-2_8">User-Friendly Health-Conscious Recipe Adaptation System Using Fuzzy Linguistic Variables</a>. In <em>IPMU 2024</em> (pp. 82–93). Springer.</li>
+            <li>Morales-Garzón, A., Rocha, O. A., Ramirez, S. B., Casquino, G. T., &amp; Medina, A. <a href="https://research.latinxinai.org/papers/naacl/2024/pdf/Andrea_Morales-Garzon.pdf">Healthy cooking with large language models, supervised fine-tuning, and retrieval augmented generation</a>. In <em>LatinX in AI Workshop at NAACL</em>.</li>
+            <li>Morales-Garzón, A., Sánchez-Pérez, G. M., Sierra, J. C., &amp; Martin-Bautista, M. J. (2023). <a href="https://doi.org/10.1007/978-3-031-42935-4_4">The Promise of Query Answering Systems in Sexuality Studies: Current State, Challenges and Limitations</a>. In <em>FQAS 2023</em> (pp. 39–49). Springer.</li>
+            <li>Morales-Garzón, A., Morcillo-Jimenez, R., Gutiérrez-Batista, K., &amp; Martin-Bautista, M. J. (2023). <a href="https://doi.org/10.1007/978-3-031-42935-4_9">How Tasty Is This Dish? Studying User-Recipe Interactions with a Rating Prediction Algorithm and Graph Neural Networks</a>. In <em>FQAS 2023</em> (pp. 107–117). Springer.</li>
+            <!-- <li>Morales-Garzón, A., Gómez-Romero, J., &amp; Martin-Bautista, M. J. (2022). <a href="https://doi.org/10.1007/978-3-031-08974-9_24">Contextual sentence embeddings for obtaining food recipe versions</a>. In <em>IPMU 2022</em>.</li> -->
+            <!-- <li>Morales-Garzón, A., Gómez-Romero, J., &amp; Martin-Bautista, M. J. (2021). <a href="https://doi.org/10.18653/v1/2021.eacl-srw.20">Semantic-aware transformation of short texts using word embeddings: An application in the Food Computing domain</a>. In <em>EACL SRW 2021</em> (pp. 148–154).</li> -->
+          </ul>
+        </section>
 
-<p>
-Previously, I worked as a researcher in the <a href="https://www.stance4health.com">H2020 Project Stance4Health</a>, contributing to the design of an intelligent nutrition service. I also hold Master's degrees in Computer Engineering and Data Science from UGR, where I specialized in computing and intelligent systems. My academic path began with a Bachelor's degree in Computer Engineering, where I discovered my passion for machine learning, data analysis, and their real-world applications.
-</p>
+        <section id="grants">
+          <h2>Grants and awards</h2>
 
-<p>
-<a>Scientific communication</a>  
-I actively participate in scientific dissemination and outreach activities, including international conferences, AI workshops, and events for the general public such as the European Researchers' Night 2022. I have also been a workshop leader and invited speaker at the national Python conference (<a href="https://es.pycon.org/">PyConES</a>) and at <a href="https://pydata.org/">PyData-Granada</a>, sharing my research with the open-source Python community.
-</p>
+          <h3>Grants</h3>
+          <ul class="award-list">
+            <li><strong>Postdoctoral fellowship</strong> funded by the Internal Research and Transfer Program of the University of Granada (2025–2026)</li>
+            <li><strong>Doctoral fellowship</strong> funded by the Department of Economic Transformation, Industry, Knowledge and Universities of the Junta de Andalucía (2022–2026)</li>
+            <li><strong>Research initiation fellowship for MSc Students</strong> of the University of Granada (2019–2021)</li>
+          </ul>
 
+          <h3>Awards</h3>
+          <ul class="award-list">
+            <li><strong>First Honorable Mention, SCIE–ZONTA–SNGULAR Awards</strong> (2024). Recognises contributions of women pursuing doctoral studies in computer science. Organised by SCIE, ZONTA International, and SNGULAR.</li>
+            <li><strong>Special Mention</strong>, Hackathon SOMOSNLP (2023). Awarded for the development of large food corpora.</li>
+            <li><strong>Ateneo de Granada–Unicaja Foundation Award</strong> (2023, Scientific and Technical Research category). Recognises outstanding young talent from Andalusia.</li>
+            <li><strong>Business Idea Award</strong> (UNIVERGEM Program, 2023). Granted by the Vice-Rectorate for Social Innovation, Employability and Entrepreneurship of UGR and the Andalusian Institute for Women.</li>
+            <li><strong>3MT (Three Minute Thesis) Competition Finalist</strong>, University of Granada (2024). Selected for effectively communicating doctoral research in 3 minutes to a general audience.</li>
+            <li><strong>Selected Oral Presentation</strong>, Forum for Equality in Research (2021, UGR). Sole presentation selected in the Scientific and Technical Research category.</li>
+            <li><strong>Best academic record at the MSc in Computer Engineering</strong>, University of Granada (2019/2020)</li>
+            <li><strong>Best master thesis at the MSc in Computer Engineering</strong>, University of Granada (2019/2020)</li>
+          </ul>
 
-    <h3> <a>Recent news</a></h3>
+          <h3>Pre-competitive projects as PI</h3>
+          <ul class="award-list">
+            <li><strong>Artificial Intelligence Techniques for Nutritional Guidance and Education</strong> (PI: Andrea Morales Garzón). Funded by CITIC-UGR. </li>
+            <li><strong>DESIRE: DEep learning for expert-driven applications in the SexualIty REsearch field</strong> (PI: Andrea Morales Garzón). Funded by UGR.</li>
+            <li><strong>HeathIA: Applications of Artificial Intelligence in Health</strong> (PI: Andrea Morales Garzón). Funded by CITIC-UGR.</li>
+          </ul>
+        </section>
 
-    <ul>
-      <li><a>16 July 2025</a> Successfully defended my PhD thesis with <em>cum laude</em>!</li>
-      <li>
-        <a>1 April 2025</a> Visiting PhD Student (3 months) at the NLP section of 
-        <a href="https://di.ku.dk/english/research/nlp/">University of Copenhagen (KU)</a>. 
-        Check out our <a href="https://arxiv.org/abs/2507.21934">preprint</a>!
-      </li>
-      <li> <a>1 June 2024</a> Visiting PhD Student (3 months) at the NLP section of <a href="https://di.ku.dk/english/research/nlp/">University of Copenhagen (KU)</a>
-
-      <li> <a>24 June 2024</a> I have been awarded in the <a href="https://ugremprendedora.ugr.es/convocados-8-premios-de-800-euros-a-ideas-de-negocio-dentro-del-programa-univergem-2023/">UNIVERGEM Entrepreneurship for Business Ideas</a> for the technological contributions that I'm developing in my PhD thesis</li>
-      <li> <a>19 June 2024</a> I got the 1st Runner-up <a href="https://www.scie.es/convocado-la-4a-edicion-de-los-premios-scie-zonta-sngular-2024/">SCIE-ZONTA-SNGULAR 2024 award</a>. 
-        This award recognises the contribution of women pursuing PhD studies in the field of computer science.
-      <li> <a>29 September 2023</a> Participating at European Researchers Night! More info regarding my talks in this link <a href="https://lanochedelosinvestigadores.fundaciondescubre.es/investigador/andrea-morales-garzon/">link</a>
-
-      <li> <a>5 September 2023</a> Organising a special session on NLP at FQAS 2023: <a href="https://doi.org/10.5281/zenodo.7611793 ">https://doi.org/10.5281/zenodo.7611793 </a>
-      <li> <a>1 February 2023</a> Gave an oral talk about LLMs in PyData Granada. DOI: <a href="https://doi.org/10.5281/zenodo.7611793 ">https://doi.org/10.5281/zenodo.7611793 </a>
-      <li> <a>30 September 2022</a> Gave a workshop on PyTorch at the <a href="https://charlas.2022.es.pycon.org/pycones2022/talk/BRKLNP/">PyConES 2022</a>
-      <li> <a>31 May 2022</a> Visiting scholar in the ML group of <a href="https://laboratoirehubertcurien.univ-st-etienne.fr/en/teams/data-intelligence.html">Laboratoire Hubert Curien for Domain Adaptation techniques in NLP</a>
-      <li> <a>31 January 2022</a> Selected as oral speaker in the 1st <i>Forum for research equality generation</i> at the University of Granada
-      <li> <a>28 January 2022</a> Defended my master thesis called "Deep learning for text processing in food computing"</li>
-      <li> <a>25 January 2022</a> I'm participating in the 1st <i>Forum for research equality generation</i> at the University of Granada
-      <li> <a>17 January 2022</a> Selected candidate for a pre-doctorate research fellowship! Yay! </li>
-    </ul>
-
-
-    <h3> <a>Selected publications</a> </h3>
-
-    <dd><h4> <c>Journal papers</c> </h4>
-    <ul>
-      <li>Morales Garzón, A., & Rojas Carvajal, A. M., Morcillo Jiménez, R., Martín Bautista, M. J., Gutiérrez Batista, K. (2025). <a href="https://doi.org/10.1016/j.asoc.2025.113234">Personalised healthy food text recommendations through fuzzy linguistic variables: A generative AI-based approach</a>.</li>
-      <li>Morales-Garzón, A., Peinado, P. S., Morcillo-Jimenez, R., Gutiérrez-Batista, K., & Martin-Bautista, M. J. (2025). <a href="https://doi.org/10.1016/j.eswa.2025.127603">Service-oriented multi-platform for food computing: A mobile application for recipe adaptation to nutrition behaviours (AI2Cuisine)</a>. Expert Systems with Applications, 281, 127603.</li>
-      <li>Diaz-Garcia, J. A., Morales-Garzón, A., Gutiérrez-Batista, K., & Martin-Bautista, M. J. (2025). <a href="https://doi.org/10.3390/electronics14173426">Optimising Text Classification in Social Networks via Deep Learning-Based Dimensionality Reduction</a>. <i>Electronics, 14</i>(17), 3426.</li>
-      <li>Morales-Garzón, A., Gutiérrez-Batista, K., & Martin-Bautista, M. J. (2025). <a href="https://doi.org/10.1007/s00530-025-01667-y">Adaptafood: an intelligent system to adapt recipes to specialised diets and healthy lifestyles</a>. Multimedia Systems, 31(2), 87.</li>
-      <li>Morales-Garzón, A., Gutiérrez-Batista, K., & Martin-Bautista, M. J. (2023). <a href="https://doi.org/10.1007/s00607-023-01233-2"> Link prediction in food heterogeneous graphs for personalised recipe recommendation based on user interactions and dietary restrictions</a>. Computing, 1-23.</li>
-      <li>Ortiz-Viso, B., Morales-Garzón, A., Martin-Bautista, M. J., & Vila, M. A. (2023). <a href="https://doi.org/10.1109/ACCESS.2023.3290918">Evolutionary approach for building, exploring and recommending complex items with application in nutritional interventions</a>. <i>IEEE Access, 11</i>, 65891-65905.</li> 
-      <li>Morales-Garzón, A., Gómez-Romero, J., & Martin-Bautista, M. J. (2021). <a href="https://doi.org/10.1109/ACCESS.2021.3058559">A Word Embedding-Based Method for Unsupervised Adaptation of Cooking Recipes</a>. IEEE Access, 9, 27389-27404.</li>
-    </ul>
-
-
-    <h4> <c>Conference papers</c> </h4>
-    <ul>
-      <li> Morales-Garzón, A., Morcillo-Jiménez, R., Gutiérrez-Batista, K., & Martin-Bautista, M. J. (2024, July).  <a href="https://doi.org/10.1007/978-3-031-73997-2_8"> User-Friendly Health-Conscious Recipe Adaptation System Using Fuzzy Linguistic Variables</a>. In International Conference on Information Processing and Management of Uncertainty in Knowledge-Based Systems (pp. 82-93). Cham: Springer Nature Switzerland.
-      <li> Morales-Garzón, A., Rocha, O. A., Ramirez, S. B., Casquino, G. T., & Medina, A. (s. f.). <a href="https://research.latinxinai.org/papers/naacl/2024/pdf/Andrea_Morales-Garzon.pdf">Healthy cooking with large language models, supervised fine-tuning, and retrieval augmented generation</a>. Proceedings of the LatinX in AI Workshop at NAACL.</li>
-      <li> Morales-Garzón, A., Sánchez-Pérez, G. M., Sierra, J. C., & Martin-Bautista, M. J. (2023, September). <a href="https://doi.org/10.1007/978-3-031-42935-4_4"> The Promise of Query Answering Systems in Sexuality Studies: Current State, Challenges and Limitations </a>  In International Conference on Flexible Query Answering Systems (pp. 39-49). Cham: Springer Nature Switzerland. </li>
-      <li> Morales-Garzón, A., Morcillo-Jimenez, R., Gutiérrez-Batista, K., & Martin-Bautista, M. J. (2023, September). <a href="https://doi.org/10.1007/978-3-031-42935-4_9"> How Tasty Is This Dish? Studying User-Recipe Interactions with a Rating Prediction Algorithm and Graph Neural Networks </a>  In International Conference on Flexible Query Answering Systems (pp. 107-117). Cham: Springer Nature Switzerland. </li>
-      <li> Morales-Garzón, A., Gómez-Romero, J., & Martin-Bautista, M. J. (2022, July). <a href="https://doi.org/10.1007/978-3-031-08974-9_24"> Contextual sentence embeddings for obtaining food recipe versions </a>  In International Conference on Information Processing and Management of Uncertainty in Knowledge-Based Systems </li>
-      <li> Morales-Garzón, A., Gómez-Romero, J., & Martin-Bautista, M. J. (2021, April). <a href="https://doi.org/10.18653/v1/2021.eacl-srw.20">Semantic-aware transformation of short texts using word embeddings: An application in the Food Computing domain</a>. In Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Student Research Workshop (pp. 148-154).</li>
-      <!-- <li> Morales-Garzón, A., Gómez-Romero, J., & Martin-Bautista, M. J. (2020, June). <a href="https://doi.org/10.1007/978-3-030-50143-3_50">A word embedding model for mapping food composition databases using fuzzy logic</a>. In International Conference on Information Processing and Management of Uncertainty in Knowledge-Based Systems (pp. 635-647). Springer, Cham.</li> -->
-    </ul>
-    </dd>
-
-
-    <h3> <a>Grants and awards</a> </h3>
-
-    <dd><h4> <c>Grants</c> </h4>
-
-    <ul>
-      <li><a>Postdoctoral fellowship</a> funded by the Internal Research and Transfer Program of the University of Granada (2025–2026)</li>
-      <li> <a>Doctoral fellowship</a> funded by the Department of Economic Transformation, Industry, Knowledge and Universities of the Junta de Andalucía (2022-2026)</li>
-      <li> <a>Research initiation fellowship for Ms Students  of the University of Granada </a>(2019-2021)</li>
-    </ul>
-
-
-<dd>
-  <h4><c>Awards</c></h4>
-  <ul>
-    <li><a>First-Honorable mention, SCIE–ZONTA–SNGULAR Awards</a> (2024). Recognises contributions of women pursuing doctoral studies in computer science. Organised by SCIE, ZONTA International (Madrid Km0 & Málaga clubs), and SNGULAR.</li>
-    <li><a>Special Mention</a>, Hackathon SOMOSNLP (2023). Awarded for the development of large food corpora.</li>
-    <li><a>Ateneo de Granada–Unicaja Foundation Award</a> (2023, Scientific and Technical Research category). Recognises outstanding young talent from Andalusia.</li>
-    <li><a>Business Idea Award</a> (UNIVERGEM Program, 2023). Granted by the Vice-Rectorate for Social Innovation, Employability and Entrepreneurship of UGR and the Andalusian Institute for Women. Recognised for strong potential for industrial transfer and real-world application.</li>
-    <hr style="display:inline-block; width:100%; margin:0; vertical-align:middle;">
-    <li><a>3MT (Three Minute Thesis) Competition Finalist</a>, University of Granada (2024). Selected for effectively communicating doctoral research in 3 minutes to a general audience.</li>
-    <li><a>Selected Oral Presentation</a>, Forum for Equality in Research (2021, University of Granada, Scientific and Technical Research category). Sole presentation selected in this category.</li>
-    <hr style="display:inline-block; width:100%; margin:0; vertical-align:middle;">
-    <li><a>Award for the best academic record at the MSc in Computer Engineering</a> of the University of Granada (Academic year 2019/2020)</li>
-    <li><a>Award for the best master thesis at the MSc in Computer Engineering</a> of the University of Granada (Academic year 2019/2020)</li>
-  </ul>
-</dd>
-
-<dd>
-  <h4><c>Pre-competitive projects as PI</c></h4>
-  <ul>
-    <li><a>Artificial Intelligence Techniques for Nutritional Guidance and Education</a> (PI: Andrea Morales Garzón). Funded by the Research Centre in ICT from the University of Granada - CITIC-UGR  (Grant Ref. CITIC-2024-06). Duration: 08/05/2024 – 31/12/2024. Amount: €1000.</li>
-    <li><a>DESIRE: DEep learning for expert-driven applications in the SexualIty REsearch field</a> (PI: Andrea Morales Garzón). Funded by the Research Centre in ICT from the University of Granada - CITIC-UGR  (Grant Ref. PPJIB2023-120). Duration: 01/01/2024 – 31/12/2024. Amount: €350.</li>
-    <li><a>HeathIA: Applications of Artificial Intelligence in Health</a> (PI: Andrea Morales Garzón). Funded by CITIC-UGR (Grant Ref. DIVULGA-CITIC-2024-05). Duration: 21/10/2024 – 31/12/2024. Amount: €300.</li>
-  </ul>
-</dd>
-
-
-
-  </section>
-
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a> Also inspired by <a href="https://github.com/somepago/somepago.github.io">Gowthami Somepalli's webpage</a></small> </p>
-      </footer>
+      </main>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
 
+    <footer>
+      <p>Hosted on GitHub Pages &mdash; Theme inspired by <a href="https://github.com/orderedlist">orderedlist</a> and <a href="https://github.com/somepago/somepago.github.io">Gowthami Somepalli's webpage</a></p>
+    </footer>
+
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
 </html>
