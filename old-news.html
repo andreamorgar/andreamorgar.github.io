@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Older news — Andrea Morales Garzón</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +14,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </head>
   <body>
+
+    <nav class="topnav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#news">News</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#grants">Grants & Awards</a>
+    </nav>
 
     <div class="wrapper">
 
@@ -23,9 +31,16 @@
           <h1>Andrea Morales Garzón</h1>
           <p class="position">Postdoctoral Researcher</p>
           <p class="institution">University of Granada</p>
-          <img src="images/mail.png" alt="Email address" class="mail-img">
+          <div class="profile-divider"></div>
+          <p class="email-line" id="email-display"></p>
+          <script>
+            (function() {
+              var e1 = atob('YW1vcmFsZXNnQHVnci5lcw==');
+              var el = document.getElementById('email-display');
+              el.innerHTML = '<a href="mailto:' + e1 + '"><i class="fa fa-envelope"></i> ' + e1 + '</a>';
+            })();
+          </script>
           <div class="social-links">
-            <a href="./docs/Andrea_CV.pdf" title="CV"><i class="ai ai-cv"></i></a>
             <a href="https://github.com/andreamorgar" title="GitHub"><i class="fa fa-github"></i></a>
             <a href="https://www.linkedin.com/in/andrea-morales-garzón-784721104" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
             <a href="https://scholar.google.com/citations?user=VY5jg9YAAAAJ&hl=es" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
@@ -38,7 +53,7 @@
       <main class="content">
 
         <section id="old-news">
-          <h2>Older news</h2>
+          <h2><span class="section-emoji">🗂️</span>Older news</h2>
           <p class="older-news-link"><a href="index.html">← Back</a></p>
           <ul class="news-list">
             <li>
